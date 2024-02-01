@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: aquamarine;
+    padding: 0;
+}
+.popup {
+    width: 500px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem; 
+    font-family: 'Cascadia Mono',  monospace;
+  }
+  
+  .popup ul {
+    padding-right: 10px;   
+    list-style: circle;
+  }
+  
+  .popup li {
+    margin-bottom: 0.5rem; 
+    font-size: 1rem; 
+  }
+  

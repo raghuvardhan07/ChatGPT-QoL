@@ -1,18 +1,33 @@
 {
     "manifest_version": 3,
-    "name": "Hello Extensions of the world",
-    "description": "Base Level Extension",
+    "name": "ChatGPT QoL - For ChatGPT",
+    "description": "A Quality of Life Improvement over ChatGPT",
     "version": "1.0",
-    "action": {
-      "default_popup": "hello.html",
-      "default_icon": "hello_extensions.png"
-    },
-    "permissions": [
-        "tabs", "activeTab", "scripting"
-      ],
-      
-    "host_permissions": ["https://chat.openai.com/"], 
-      "background": {
+    "permissions": ["tabs", "activeTab", "scripting"],
+
+    "host_permissions": ["https://chat.openai.com/*"],
+    "background": {
         "service_worker": "background.js"
-      }
-  }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://chat.openai.com/*"],
+            "js": ["content_scripts.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["assets/logo.png"],
+            "matches": ["https://chat.openai.com/*"]
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "16": "assets/logo.png",
+            "24": "assets/logo.png",
+            "32": "assets/logo.png"
+        },
+        "default_title": "My YT Bookmarks",
+        "default_popup": "popup.html"
+    }
+}
