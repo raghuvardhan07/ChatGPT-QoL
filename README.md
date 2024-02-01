@@ -27,3 +27,26 @@ Stay focused on the conversation as the page automatically scrolls down to the l
 ### Togglable queries
 
 Experience a clean and organized UI where big queries which take up a lot of screen space are collapsed by default, making it easier to read smaller responses or expand larger ones as needed.
+
+### Installation
+
+Open terminal and cd to your desired directory
+Make a folder with desired name
+
+```
+mkdir QoLGPT
+```
+
+```
+cd QoLGPT
+```
+
+```
+git clone https://github.com/raghuvardhan07/ChatGPT-QoL.git
+```
+
+Open Chrome/Edge or any Chromium based browser
+Navigate to `chrome://extensions`
+Turn on developer mode
+Click "Load Unpacked" and point it to the folder where you cloned this repository (QoLGPT)
+Then enable the extension to use it
