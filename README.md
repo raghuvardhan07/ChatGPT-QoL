@@ -46,7 +46,11 @@ git clone https://github.com/raghuvardhan07/ChatGPT-QoL.git
 ```
 
 Open Chrome/Edge or any Chromium based browser
+
 Navigate to `chrome://extensions`
+
 Turn on developer mode
+
 Click "Load Unpacked" and point it to the folder where you cloned this repository (QoLGPT)
+
 Then enable the extension to use it
